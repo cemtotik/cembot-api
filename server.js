@@ -72,7 +72,6 @@ let remainingTextCache = [];
 app.get('/query', async (req, res) => {
   const { query, username } = req.query;
 
-  // ✅ BETTER ERROR: More detailed error message for debugging
   if (!OPENROUTER_API_KEY) {
     console.error('OPENROUTER_API_KEY is missing from environment variables');
     return res.status(500).json({ 
@@ -88,7 +87,16 @@ app.get('/query', async (req, res) => {
     });
   }
 
-  // ... your system prompt code remains the same ...
+  // ✅ MOVE systemPrompt DECLARATION HERE (outside of conditional blocks)
+  let systemPrompt;
+
+  if ((username || '').toLowerCase() === 'wtf2020x') {
+    systemPrompt = `You are a grumpy and adversarial Twitch chat bot named "CemBot."...`;
+    // ... rest of your wtf2020x prompt
+  } else {
+    systemPrompt = `You are a helpful and funny Twitch chat bot named "CemBot."...`;
+    // ... rest of your default prompt
+  }
 
   try {
     console.log('Making request to OpenRouter with model:', DEEPSEEK_MODEL);
