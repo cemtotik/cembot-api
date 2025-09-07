@@ -4,7 +4,7 @@ const app = express();
 
 // API Configuration
 const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
-const OPENROUTER_API_KEY = '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'; // Replace with your OpenRouter API key
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY; // Replace with your OpenRouter API key
 //const DEEPSEEK_MODEL = 'nousresearch/deephermes-3-llama-3-8b-preview:free'; // somewhat fast model with good responses
 //const DEEPSEEK_MODEL = 'deepseek/deepseek-chat:free'; // deepseek model
 const DEEPSEEK_MODEL = 'opengvlab/internvl3-14b:free'; // qwen model
