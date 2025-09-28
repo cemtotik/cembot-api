@@ -15,9 +15,9 @@ app.use(express.json());
 // --- Config (env-driven; no secrets in code) ---
 const OPENROUTER_API_URL = process.env.OPENROUTER_API_URL || 'https://openrouter.ai/api/v1/chat/completions';
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
-//const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'qwen/qwen3-4b:free';
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'qwen/qwen3-4b:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'openai/gpt-oss-20b:free';
-const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'mistralai/mistral-7b-instruct:free';
+//const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'mistralai/mistral-7b-instruct:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'nousresearch/deephermes-3-llama-3-8b-preview:free';
 
 // ✅ FIXED: Use proper referer URL (OpenRouter requires valid URL)
