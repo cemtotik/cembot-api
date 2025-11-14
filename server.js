@@ -16,13 +16,13 @@ app.use(express.json());
 const OPENROUTER_API_URL = process.env.OPENROUTER_API_URL || 'https://openrouter.ai/api/v1/chat/completions';
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'qwen/qwen3-4b:free';
-//const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'openai/gpt-oss-20b:free';
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'openai/gpt-oss-20b:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'mistralai/mistral-7b-instruct:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'nousresearch/deephermes-3-llama-3-8b-preview:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'nvidia/nemotron-nano-9b-v2:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'meituan/longcat-flash-chat:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'z-ai/glm-4.5-air:free';
-const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'moonshotai/kimi-k2:free';
+//const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'moonshotai/kimi-k2:free';
 
 // ✅ FIXED: Use proper referer URL (OpenRouter requires valid URL)
 const REFERER = process.env.PUBLIC_URL || 'https://your-render-app-url.onrender.com';
