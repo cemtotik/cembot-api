@@ -26,7 +26,7 @@ const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'nvidia/nemotron-nano-9b-v2:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'meituan/longcat-flash-chat:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'z-ai/glm-4.5-air:free';
-const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'moonshotai/kimi-k2:free';
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'inclusionai/ring-2.6-1t:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'alibaba/tongyi-deepresearch-30b-a3b:free';
 
 // ✅ FIXED: Use proper referer URL (OpenRouter requires valid URL)
