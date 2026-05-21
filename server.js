@@ -25,7 +25,7 @@ const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'nousresearch/deephermes-3-llama-3-8b-preview:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'nvidia/nemotron-nano-9b-v2:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'meituan/longcat-flash-chat:free';
-const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek/deepseek-v4-flash:free';
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'liquid/lfm-2.5-1.2b-thinking:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'inclusionai/ring-2.6-1t:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'alibaba/tongyi-deepresearch-30b-a3b:free';
 
