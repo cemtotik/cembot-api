@@ -15,7 +15,7 @@ app.use(express.json());
 // --- Config (env-driven; no secrets in code) ---
 const OPENROUTER_API_URL = process.env.OPENROUTER_API_URL || 'https://openrouter.ai/api/v1/chat/completions';
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
-const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'qwen/qwen3-next-80b-a3b-instruct:free';
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'meta-llama/llama-3.3-70b-instruct:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'stepfun/step-3.5-flash:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'nvidia/nemotron-3-super-120b-a12b:free';
 //const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'z-ai/glm-4.5-air:free';
